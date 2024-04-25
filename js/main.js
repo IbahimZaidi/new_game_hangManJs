@@ -485,6 +485,9 @@ for (let i = 0; i < mySmallBoxes.length; i++) {
       console.log("NOOOOOOOOOOoo");
 
       field.style.visibility = "visible";
+      setTimeout(() => {
+        window.location.reload();
+      }, 1000);
     }
 
     // case success
@@ -502,7 +505,12 @@ for (let i = 0; i < mySmallBoxes.length; i++) {
     if (cheackYes == word.length) {
       console.log("Yeeesssss!!!!!");
       success.style.visibility = "visible";
+      // target the re-frech page :
+
       let numberEnter = 10;
+      setTimeout(() => {
+        window.location.reload();
+      }, 1000);
     }
 
     console.log(cheak);
