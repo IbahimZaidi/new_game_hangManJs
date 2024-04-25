@@ -1,0 +1,79 @@
+/* import the tailwind css :  */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* style all page  */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 70% !important;
+}
+
+.container .row > div {
+  height: 300px !important;
+}
+.container .row .answer {
+  height: 60px !important;
+}
+
+.container .row .imagesDiv {
+  position: relative;
+}
+
+.container .row img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.last_col {
+  display: grid;
+  grid-template-columns: repeat(4, 22%);
+  justify-content: center;
+  align-items: center;
+  column-gap: 2%;
+  float: left;
+  height: 300px !important;
+}
+
+.smallBox {
+  @apply w-8 lg:w-auto border-2 border-black mx-2;
+  border: 1px solid rebeccapurple;
+  background-color: #eee;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  height: 90% !important;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* this is style css for the first div in the row  */
+.first_inrow {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  align-items: end;
+}
+.first_inrow .row:last-child {
+  background-color: aquamarine;
+  width: 100%;
+  height: fit-content;
+}
+
+/* this is style for the answer div in the bottom  */
+
+.container .row .answer {
+  /* grid-template-columns: repeat(8, 12%); */
+  justify-content: center !important;
+}
+
+.container .row .answer div {
+  height: 40px !important;
+}
